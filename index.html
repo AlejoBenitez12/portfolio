@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Alejo Benitez</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="#" class="logo">Alejo Benitez</a>
+            <ul class="nav-links">
+                <li><a href="#sobreMi">Acerca de mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contactos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobreMi" class="section-sobreMi">
+            <div class="sobre-Contenedor">
+                <div class="sobreFoto">
+                    <img src="foto portfolio.jpeg" alt="Foto de perfil de Alejo Benitez">
+                </div>
+
+                <div class="sobre-Descripcion">
+                    <h1>Hola, soy Alejo Benitez</h1>
+                    <p>
+                        Soy estudiante de la Tecnicatura Superior en Sistemas Informáticos, con gran interés en el
+                        desarrollo de software
+                        y la aplicación de la tecnología en diferentes áreas. <br>
+                        Tengo experiencia trabajando con <strong>C++</strong>, <strong>SQL Server</strong> y
+                        <strong>aplicaciones WinForms en .NET</strong>. <br>
+                        Me apasiona la robótica, el desarrollo de aplicaciones y la resolución de problemas a través de
+                        la programación. <br>
+                        Soy curioso, autodidacta y estoy en constante aprendizaje para mejorar mis habilidades y
+                        afrontar nuevos desafíos. <br>
+                        Además de la tecnología, disfruto del dibujo, los videojuegos y la música, lo que me ayuda a
+                        mantener la creatividad
+                        en todo lo que hago.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="proyectos-contenedor">
+                <div class="proyecto-tarjeta">
+                    <h3>Juego Plataformero</h3>
+                    <p>
+                        <br>Desarrollé un <strong>juego de plataformas en desplazamiento vertical</strong>, que incluye
+                        enemigos, power-ups y objetos coleccionables para acumular puntos. <br>
+                        El sistema cuenta con una <strong>tabla de récords</strong> que guarda las mejores puntuaciones,
+                        fomentando la rejugabilidad. <br>
+                        Este proyecto me permitió aplicar conceptos de <strong>programación orientada a objetos</strong>
+                        y el manejo de <strong>gráficos y eventos en C++</strong>, fortaleciendo mi experiencia en el
+                        desarrollo de videojuegos.
+                    </p>
+                    <div class="tecnologias">
+                        <h4>Tecnologías:</h4>
+                        <span>C++</span>
+                        <span>SFML</span>
+                    </div>
+                    <a href="https://github.com/AlejoBenitez12" class="btn-proyecto" target="_blank">Ver en GitHub</a>
+                </div>
+                <div class="proyecto-tarjeta">
+                    <h3>Aplicación WinForms</h3>
+                    <p>
+                        <br>Aplicación WinForms en C#, .NET y SQL Server para la
+                        <strong>gestión de artículos</strong>: agregar, modificar, eliminar y buscar registros,
+                        adaptable a cualquier tipo de negocio.
+                    </p>
+                    <div class="tecnologias">
+                        <h4>Tecnologías:</h4>
+                        <span>C#</span>
+                        <span>.NET Framework</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <a href="https://github.com/AlejoBenitez12" class="btn-proyecto" target="_blank">Ver en GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactos" class="section contactos">
+            <h2>Contáctame</h2>
+            <form action="mailto:Abenitez12@gmail.com" method="POST" enctype="text/plain" class="form-contacto">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar" >Enviar</button>
+                <br>
+                <p style="text-align: center;" >Puedes enviarme un correo a <a href="mailto:Abenitez@gmail.com">Abenitez@gmail.com</a></p>
+                
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Alejo Benitez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c2a41; 
+    color: #a0b2d6; 
+}
+
+.header {
+    background-color: #3b5270; 
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    margin-top: 5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a0b2d6;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #a0b2d6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #5c4a72; 
+}
+
+
+.section {
+    padding: 6rem 2rem 2rem;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    color: #a0b2d6;
+}
+
+
+.project-card {
+    background-color: #3b5270;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+}
+
+
+.footer {
+    background-color: #3b5270;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.sobre-Contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sobreFoto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #5c4a72;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-Descripcion p{
+    text-align: center;
+}
+.sobre-Descripcion h1{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .sobre-contenedor {
+        flex-direction: row; 
+        justify-content: center; 
+        max-width: 900px;
+        margin: 0 auto; 
+    }
+
+    .sobreFoto, .sobre-Descripcion {
+        flex: 1; 
+        text-align: left; 
+    }
+
+    .sobreFoto {
+        display: flex;
+        justify-content: flex-end; 
+        padding-right: 2rem;
+    }
+
+    .sobre-Descripcion {
+        padding-left: 2rem;
+    }
+}
+
+.proyectos-contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.proyecto-tarjeta {
+    background-color: #3b5270;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-tarjeta:hover {
+    transform: translateY(-5px); 
+}
+
+.proyecto-tarjeta h3 {
+    margin-top: 0;
+    color: #a0b2d6;
+}
+
+
+.tecnologias {
+    margin: 1rem 0;
+}
+
+.tecnologias span {
+    display: inline-block;
+    background-color: #5c4a72;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.btn-proyecto {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #a0b2d6;
+    color: #1c2a41;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-proyecto:hover {
+    background-color: #5c4a72;
+    color: #fff;
+}
+
+.contactos a {
+    color: #a0b2d6; 
+    text-decoration: none; 
+}
+
+.contactos a:hover {
+    color: #5c4a72; 
+}
+
+.form-contacto {
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: #3b5270;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a0b2d6;
+    font-weight: bold;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #5c4a72;
+    border-radius: 6px;
+    background-color: #1c2a41;
+    color: #a0b2d6;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+    border-color: #a0b2d6;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #a0b2d6;
+    color: #1c2a41;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #5c4a72;
+    color: #fff;
+}
